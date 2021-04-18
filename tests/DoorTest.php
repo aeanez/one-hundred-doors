@@ -29,7 +29,7 @@ class DoorTest extends TestCase{
         $door = new Door();
         $door->visit()->visit();
 
-        $this->assertEquals('close', $door->currentState);
+        $this->assertEquals('closed', $door->currentState);
     }
 
 }

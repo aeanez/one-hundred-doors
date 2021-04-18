@@ -27,7 +27,7 @@ class Door {
     public function visit() : Door
     {
 
-        $this->currentState = next($this->states);
+        $this->currentState = next($this->states) ? current($this->states) : reset($this->states);
 
         return $this;
 
