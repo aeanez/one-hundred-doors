@@ -2,7 +2,7 @@
 
 namespace Tests;
 
-use Aeanez\Door;
+use Aeanez\OneHundredDoors\Door;
 use PHPUnit\Framework\TestCase;
 
 class DoorTest extends TestCase{

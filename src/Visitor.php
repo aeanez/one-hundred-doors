@@ -1,5 +1,5 @@
 <?php
-namespace Aeanez;
+namespace Aeanez\OneHundredDoors;
 
 class Visitor {
 

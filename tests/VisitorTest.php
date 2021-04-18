@@ -2,8 +2,8 @@
 
 namespace Tests;
 
-use Aeanez\Door;
-use Aeanez\Visitor;
+use Aeanez\OneHundredDoors\Door;
+use Aeanez\OneHundredDoors\Visitor;
 use PHPUnit\Framework\TestCase;
 
 class VisitorTest extends TestCase{
