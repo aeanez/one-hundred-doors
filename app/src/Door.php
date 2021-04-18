@@ -16,4 +16,6 @@ class Door {
      */
     public string $currentState = 'closed';
 
+    
+
 }

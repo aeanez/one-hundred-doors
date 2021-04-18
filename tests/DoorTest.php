@@ -14,6 +14,15 @@ class DoorTest extends TestCase{
         $this->assertEquals('closed', $door->currentState);
     }
 
+    /** @test */
+    public function it_returns_open_when_a_door_is_visited_for_the_first_time()
+    {
+        $door = new Door();
+        $door->visit();
+
+        $this->assertEquals('open', $door->currentState);
+    }
+
 }
 
 
