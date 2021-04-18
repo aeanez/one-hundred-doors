@@ -1,8 +1,15 @@
-<?php
+# One hundred doors Kata
 
+This package solve the 100 doors kata from tddbuddy.com
 
-require_once './vendor/autoload.php';
+http://tddbuddy.com/katas/100%20Doors.pdf
 
+### How to use
+```
+composer requiere aeanez/one-hundred-doors
+```
+
+```
 use Aeanez\Door;
 use Aeanez\Visitor;
 
@@ -17,4 +24,5 @@ $doorsList = [
 $visitor = new Visitor(...$doorsList);
 
 # Visit your doors any number of times
-echo $visitor->visit(100); 
+echo $visitor->visit(100);        
+```
