@@ -33,4 +33,9 @@ class Door {
 
     }
 
+    public function getSimbol()
+    {
+        return $this->simbols[array_search(current($this->states), $this->states)];
+    }
+
 }

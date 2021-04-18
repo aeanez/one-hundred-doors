@@ -32,6 +32,26 @@ class DoorTest extends TestCase{
         $this->assertEquals('closed', $door->currentState);
     }
 
+    /** @test */
+    public function it_returns_the_current_state_simbol_of_a_closed_door()
+    {
+        $door = new Door;
+
+        $this->assertEquals('#', $door->getSimbol());
+
+    }
+
+    /** @test */
+    public function it_returns_the_current_state_simbol_of_a_open_door()
+    {
+        $door = new Door;
+
+        $door->visit();
+
+        $this->assertEquals('@', $door->getSimbol());
+
+    }
+
 }
 
 
