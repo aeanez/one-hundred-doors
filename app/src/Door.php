@@ -12,10 +12,25 @@ class Door {
     ];
 
     /**
+     * Map list of simbols for states
+     */
+    public array $simbols = [
+        "#",
+        "@"
+    ];
+
+    /**
      * Current door state
      */
     public string $currentState = 'closed';
 
-    
+    public function visit() : Door
+    {
+
+        $this->currentState = next($this->states);
+
+        return $this;
+
+    }
 
 }
