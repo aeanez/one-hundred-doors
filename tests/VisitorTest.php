@@ -25,6 +25,22 @@ class VisitorTest extends TestCase{
 
     }
 
+    /** @test */
+    public function it_must_return_the_string_of_simbols_after_visiting_the_doors_once()
+    {
+        $doorsList = [
+            new Door(),
+            new Door(),
+            new Door(),
+            new Door(),
+            new Door()
+        ];
+
+        $visitor = new Visitor(...$doorsList);
+
+        $this->assertStringEqualsFile('@@@@@', $visitor->visit(1));
+    }
+
 }
 
 ?>
