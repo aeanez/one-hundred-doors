@@ -1,4 +1,16 @@
 {
+    "name": "aeanez/one-hundred-doors",
+    "type": "library",
+    "description": "This package allows you to solve the 100 doors problem",
+    "keywords": ["one", "hundred", "doors"],
+    "homepage": "https://github.com/aeanez/one-hundred-doors",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Andrés Añez",
+            "homepage": "https://www.linkedin.com/in/andres-a%C3%B1ez/?locale=en_US"
+        }
+    ],
     "require-dev": {
         "phpunit/phpunit": "9.5"
     },
