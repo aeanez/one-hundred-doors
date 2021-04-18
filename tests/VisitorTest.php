@@ -41,6 +41,29 @@ class VisitorTest extends TestCase{
         $this->assertEquals('@@@@@', $visitor->visit(1));
     }
 
+    /** @test */
+    public function it_must_return_an_specific_six_caracter_string_after_any_number_of_iterations()
+    {
+        $doorsList = [
+            new Door(),
+            new Door(),
+            new Door(),
+            new Door(),
+            new Door(),
+            new Door(),
+            new Door(),
+            new Door(),
+            new Door(),
+            new Door(),
+            new Door(),
+            new Door(),
+        ];
+
+        $visitor = new Visitor(...$doorsList);
+
+        $this->assertEquals('@##@##', substr($visitor->visit(100), 0, 6));
+    }
+
 }
 
 ?>
