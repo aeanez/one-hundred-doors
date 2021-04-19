@@ -66,7 +66,7 @@ class VisitorTest extends TestCase{
     }
 
     /** @test */
-    public function it_should_throw_an_exception_when_receive_an_invalid_number_of_iterations()
+    public function it_should_throw_an_exception_if_the_number_of_iterations_is_minor_than_one()
     {
 
         $doorsList = [
@@ -89,7 +89,6 @@ class VisitorTest extends TestCase{
         $this->fail('An expected exception was not raise');
         
     }
-    
 
 }
 
