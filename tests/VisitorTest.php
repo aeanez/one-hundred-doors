@@ -99,6 +99,7 @@ class VisitorTest extends TestCase{
             new Door(),
             new Door(),
             new Door(),
+            new Door(),
         ];
 
         $visitor = new Visitor(...$doorsList);

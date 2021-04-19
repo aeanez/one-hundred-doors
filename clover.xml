@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1618804006">
-  <project timestamp="1618804006">
+<coverage generated="1618840119">
+  <project timestamp="1618840119">
     <file name="C:\laragon\www\doors\src\Door.php">
       <class name="Aeanez\OneHundredDoors\Door" namespace="global">
         <metrics complexity="3" methods="2" coveredmethods="2" conditionals="0" coveredconditionals="0" statements="3" coveredstatements="3" elements="5" coveredelements="5"/>
