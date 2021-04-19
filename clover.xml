@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1618799368">
+  <project timestamp="1618799368">
+    <file name="C:\laragon\www\doors\src\Door.php">
+      <class name="Aeanez\OneHundredDoors\Door" namespace="global">
+        <metrics complexity="3" methods="2" coveredmethods="2" conditionals="0" coveredconditionals="0" statements="3" coveredstatements="3" elements="5" coveredelements="5"/>
+      </class>
+      <line num="27" type="method" name="visit" visibility="public" complexity="2" crap="2" count="5"/>
+      <line num="30" type="stmt" count="5"/>
+      <line num="32" type="stmt" count="5"/>
+      <line num="36" type="method" name="getSimbol" visibility="public" complexity="1" crap="1" count="4"/>
+      <line num="38" type="stmt" count="4"/>
+      <line num="41" type="stmt" count="1"/>
+      <metrics loc="40" ncloc="31" classes="1" methods="2" coveredmethods="2" conditionals="0" coveredconditionals="0" statements="3" coveredstatements="3" elements="5" coveredelements="5"/>
+    </file>
+    <file name="C:\laragon\www\doors\src\Visitor.php">
+      <class name="Aeanez\OneHundredDoors\Visitor" namespace="global">
+        <metrics complexity="8" methods="2" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="13" coveredstatements="12" elements="15" coveredelements="13"/>
+      </class>
+      <line num="17" type="method" name="__construct" visibility="public" complexity="1" crap="1" count="4"/>
+      <line num="20" type="stmt" count="4"/>
+      <line num="22" type="stmt" count="4"/>
+      <line num="24" type="method" name="visit" visibility="public" complexity="7" crap="7.04" count="3"/>
+      <line num="27" type="stmt" count="3"/>
+      <line num="28" type="stmt" count="0"/>
+      <line num="31" type="stmt" count="3"/>
+      <line num="32" type="stmt" count="1"/>
+      <line num="35" type="stmt" count="2"/>
+      <line num="36" type="stmt" count="2"/>
+      <line num="37" type="stmt" count="2"/>
+      <line num="38" type="stmt" count="2"/>
+      <line num="43" type="stmt" count="2"/>
+      <line num="44" type="stmt" count="2"/>
+      <line num="47" type="stmt" count="2"/>
+      <line num="50" type="stmt" count="1"/>
+      <metrics loc="49" ncloc="43" classes="1" methods="2" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="13" coveredstatements="12" elements="15" coveredelements="13"/>
+    </file>
+    <metrics files="2" loc="89" ncloc="74" classes="2" methods="4" coveredmethods="3" conditionals="0" coveredconditionals="0" statements="16" coveredstatements="15" elements="20" coveredelements="18"/>
+  </project>
+</coverage>
