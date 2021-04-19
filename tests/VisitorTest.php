@@ -89,6 +89,22 @@ class VisitorTest extends TestCase{
         $this->fail('An expected exception was not raise');
         
     }
+    
+    /** @test */
+    public function it_should_return_the_right_value_without_setting_the_number_of_iterations()
+    {
+        $doorsList = [
+            new Door(),
+            new Door(),
+            new Door(),
+            new Door(),
+            new Door(),
+        ];
+
+        $visitor = new Visitor(...$doorsList);
+
+        $this->assertEquals('@##@##', substr($visitor->visit(), 0, 6));
+    }
 
 }
 
