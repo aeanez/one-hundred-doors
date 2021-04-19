@@ -23,8 +23,13 @@ class Visitor {
 
     public function visit(int $iterations = null) : string
     {
+
         if(is_null($iterations)){
             $iterations = count($this->doorsList);
+        }
+
+        if($iterations <= 0){
+            throw new \Exception('Invalid number of iterations has been supplied');
         }
         
         for ($i=1; $i <= $iterations; $i++) { 

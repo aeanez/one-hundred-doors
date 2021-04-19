@@ -4,6 +4,7 @@ namespace Tests;
 
 use Aeanez\OneHundredDoors\Door;
 use Aeanez\OneHundredDoors\Visitor;
+use PhpParser\Node\Stmt\TryCatch;
 use PHPUnit\Framework\TestCase;
 
 class VisitorTest extends TestCase{
@@ -63,6 +64,32 @@ class VisitorTest extends TestCase{
 
         $this->assertEquals('@##@##', substr($visitor->visit(100), 0, 6));
     }
+
+    /** @test */
+    public function it_should_throw_an_exception_when_receive_an_invalid_number_of_iterations()
+    {
+
+        $doorsList = [
+            new Door(),
+            new Door(),
+            new Door(),
+            new Door(),
+            new Door(),
+        ];
+
+        $visitor = new Visitor(...$doorsList);
+
+        try {
+            $visitor->visit(-3);
+        } catch (\Exception $e) {
+            $this->assertEquals('Invalid number of iterations has been supplied', $e->getMessage());
+            return;
+        }
+
+        $this->fail('An expected exception was not raise');
+        
+    }
+    
 
 }
 
